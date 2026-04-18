@@ -19,6 +19,7 @@
 		FD1234561234567890ABCE13 /* PLYExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1234561234567890ABCE14 /* PLYExporter.swift */; };
 		FD1234561234567890ABCE15 /* ARSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1234561234567890ABCE16 /* ARSessionManager.swift */; };
 		FD1234561234567890ABCE17 /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1234561234567890ABCE18 /* CaptureViewController.swift */; };
+		FD1234561234567890ABCE19 /* PointCloudViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1234561234567890ABCE1A /* PointCloudViewer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		FD1234561234567890ABCE14 /* PLYExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLYExporter.swift; sourceTree = "<group>"; };
 		FD1234561234567890ABCE16 /* ARSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSessionManager.swift; sourceTree = "<group>"; };
 		FD1234561234567890ABCE18 /* CaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
+		FD1234561234567890ABCE1A /* PointCloudViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointCloudViewer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				FD1234561234567890ABCE14 /* PLYExporter.swift */,
 				FD1234561234567890ABCE16 /* ARSessionManager.swift */,
 				FD1234561234567890ABCE18 /* CaptureViewController.swift */,
+				FD1234561234567890ABCE1A /* PointCloudViewer.swift */,
 				FD1234561234567890ABCD04 /* LaunchScreen.storyboard */,
 				FD1234561234567890ABCD05 /* Info.plist */,
 			);
@@ -188,6 +191,7 @@
 				FD1234561234567890ABCE13 /* PLYExporter.swift in Sources */,
 				FD1234561234567890ABCE15 /* ARSessionManager.swift in Sources */,
 				FD1234561234567890ABCE17 /* CaptureViewController.swift in Sources */,
+				FD1234561234567890ABCE19 /* PointCloudViewer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

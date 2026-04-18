@@ -148,24 +148,31 @@ class CaptureViewController: UIViewController, DepthDataDelegate {
     }
 
     private func stitchPointClouds() {
-        var stitchedCloud = capturedPointClouds.first ?? PointCloud()
+        statusLabel.text = "Stitching point clouds..."
 
-        for i in 1..<capturedPointClouds.count {
-            let (registered, _) = registration.registerPointClouds(capturedPointClouds[i], to: stitchedCloud)
-            stitchedCloud.points.append(contentsOf: registered.points)
-        }
+        DispatchQueue.global().async { [weak self] in
+            guard let self = self else { return }
 
-        stitchedCloud.normalizeByRemovingCentroid()
-        let exporter = PLYExporter()
-        if let fileURL = exporter.exportPointCloudToPLY(stitchedCloud) {
-            showCompletion(fileURL: fileURL)
+            var stitchedCloud = self.capturedPointClouds.first ?? PointCloud()
+
+            for i in 1..<self.capturedPointClouds.count {
+                let (registered, _) = self.registration.registerPointClouds(self.capturedPointClouds[i], to: stitchedCloud)
+                stitchedCloud.points.append(contentsOf: registered.points)
+            }
+
+            stitchedCloud.normalizeByRemovingCentroid()
+
+            DispatchQueue.main.async {
+                self.showViewer(with: stitchedCloud)
+            }
         }
     }
 
-    private func showCompletion(fileURL: URL) {
-        let alert = UIAlertController(title: "Capture Complete!", message: "Model saved to Documents folder", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default))
-        present(alert, animated: true)
+    private func showViewer(with pointCloud: PointCloud) {
+        let viewerVC = PointCloudViewer()
+        viewerVC.pointCloud = pointCloud
+        viewerVC.modalPresentationStyle = .fullScreen
+        present(viewerVC, animated: true)
     }
 
     private func updateUI() {
