@@ -12,6 +12,13 @@
 		FD1234561234567890ABCE02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1234561234567890ABCD03 /* ViewController.swift */; };
 		FD1234561234567890ABCE03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD1234561234567890ABCD04 /* LaunchScreen.storyboard */; };
 		FD1234561234567890ABCE04 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD1234561234567890ABCD05 /* Info.plist */; };
+		FD1234561234567890ABCE0B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1234561234567890ABCE0C /* Models.swift */; };
+		FD1234561234567890ABCE0D /* HandPoseDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1234561234567890ABCE0E /* HandPoseDetector.swift */; };
+		FD1234561234567890ABCE0F /* DepthDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1234561234567890ABCE10 /* DepthDataProcessor.swift */; };
+		FD1234561234567890ABCE11 /* PointCloudRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1234561234567890ABCE12 /* PointCloudRegistration.swift */; };
+		FD1234561234567890ABCE13 /* PLYExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1234561234567890ABCE14 /* PLYExporter.swift */; };
+		FD1234561234567890ABCE15 /* ARSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1234561234567890ABCE16 /* ARSessionManager.swift */; };
+		FD1234561234567890ABCE17 /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1234561234567890ABCE18 /* CaptureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,18 @@
 		FD1234561234567890ABCD04 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD1234561234567890ABCD05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD1234561234567890ABCD06 /* MyApp.xcodeproj */ = {isa = PBXFileReference; explicitFileType = wrapper.pbxproj; path = MyApp.xcodeproj; sourceTree = "<group>"; };
+		FD1234561234567890ABCE05 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
+		FD1234561234567890ABCE06 /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
+		FD1234561234567890ABCE07 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		FD1234561234567890ABCE08 /* RealityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealityKit.framework; path = System/Library/Frameworks/RealityKit.framework; sourceTree = SDKROOT; };
+		FD1234561234567890ABCE09 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FD1234561234567890ABCE0C /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		FD1234561234567890ABCE0E /* HandPoseDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandPoseDetector.swift; sourceTree = "<group>"; };
+		FD1234561234567890ABCE10 /* DepthDataProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthDataProcessor.swift; sourceTree = "<group>"; };
+		FD1234561234567890ABCE12 /* PointCloudRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointCloudRegistration.swift; sourceTree = "<group>"; };
+		FD1234561234567890ABCE14 /* PLYExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLYExporter.swift; sourceTree = "<group>"; };
+		FD1234561234567890ABCE16 /* ARSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSessionManager.swift; sourceTree = "<group>"; };
+		FD1234561234567890ABCE18 /* CaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +48,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD1234561234567890ABCE05 /* ARKit.framework in Frameworks */,
+				FD1234561234567890ABCE06 /* Vision.framework in Frameworks */,
+				FD1234561234567890ABCE07 /* MetalKit.framework in Frameworks */,
+				FD1234561234567890ABCE08 /* RealityKit.framework in Frameworks */,
+				FD1234561234567890ABCE09 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +64,7 @@
 			children = (
 				FD1234561234567890ABCD06 /* MyApp */,
 				FD1234561234567890ABD002 /* Products */,
+				FD1234561234567890ABCE0A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,10 +82,29 @@
 				FD1234561234567890ABCD01 /* AppDelegate.swift */,
 				FD1234561234567890ABCD02 /* SceneDelegate.swift */,
 				FD1234561234567890ABCD03 /* ViewController.swift */,
+				FD1234561234567890ABCE0C /* Models.swift */,
+				FD1234561234567890ABCE0E /* HandPoseDetector.swift */,
+				FD1234561234567890ABCE10 /* DepthDataProcessor.swift */,
+				FD1234561234567890ABCE12 /* PointCloudRegistration.swift */,
+				FD1234561234567890ABCE14 /* PLYExporter.swift */,
+				FD1234561234567890ABCE16 /* ARSessionManager.swift */,
+				FD1234561234567890ABCE18 /* CaptureViewController.swift */,
 				FD1234561234567890ABCD04 /* LaunchScreen.storyboard */,
 				FD1234561234567890ABCD05 /* Info.plist */,
 			);
 			path = MyApp;
+			sourceTree = "<group>";
+		};
+		FD1234561234567890ABCE0A = {
+			isa = PBXGroup;
+			children = (
+				FD1234561234567890ABCE05 /* ARKit.framework */,
+				FD1234561234567890ABCE06 /* Vision.framework */,
+				FD1234561234567890ABCE07 /* MetalKit.framework */,
+				FD1234561234567890ABCE08 /* RealityKit.framework */,
+				FD1234561234567890ABCE09 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +181,13 @@
 				FD1234561234567890ABCDEF /* AppDelegate.swift in Sources */,
 				FD1234561234567890ABCE01 /* SceneDelegate.swift in Sources */,
 				FD1234561234567890ABCE02 /* ViewController.swift in Sources */,
+				FD1234561234567890ABCE0B /* Models.swift in Sources */,
+				FD1234561234567890ABCE0D /* HandPoseDetector.swift in Sources */,
+				FD1234561234567890ABCE0F /* DepthDataProcessor.swift in Sources */,
+				FD1234561234567890ABCE11 /* PointCloudRegistration.swift in Sources */,
+				FD1234561234567890ABCE13 /* PLYExporter.swift in Sources */,
+				FD1234561234567890ABCE15 /* ARSessionManager.swift in Sources */,
+				FD1234561234567890ABCE17 /* CaptureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

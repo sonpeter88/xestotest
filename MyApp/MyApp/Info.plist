@@ -56,5 +56,17 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>This app needs camera access to capture hand depth data and analyze hand pose for 3D modeling</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Microphone access may be needed for AR features</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Location is used for improved AR tracking</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>arkit</string>
+		<string>lidar</string>
+		<string>camera</string>
+	</array>
 </dict>
 </plist>
